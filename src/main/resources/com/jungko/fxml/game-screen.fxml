@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane id="gamePane" fx:id="gamePane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jungko.controller.GameScreenController">
+   <children>
+      <TextArea fx:id="settingsSummary" editable="false" layoutX="14.0" layoutY="506.0" prefHeight="200.0" prefWidth="200.0" text="Settings:&#10;&#10;" wrapText="true" />
+      <TextArea fx:id="gameHistory" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="475.0" prefWidth="200.0" text="Game history:&#10;&#10;" wrapText="true" />
+      <Button fx:id="quitGameBtn" layoutX="1226.0" layoutY="14.0" mnemonicParsing="false" onAction="#doQuitGame" prefHeight="25.0" prefWidth="40.0" text="Quit" />
+      <Button fx:id="sortHandBtn" layoutX="1228.0" layoutY="681.0" mnemonicParsing="false" onAction="#doSortHand" prefHeight="25.0" prefWidth="38.0" text="Sort" />
+      <Button fx:id="viewOtherSideBtn" layoutX="1134.0" layoutY="681.0" mnemonicParsing="false" onAction="#doViewOtherSide" prefHeight="25.0" prefWidth="80.0" text="View back" />
+      <Button fx:id="endTurnBtn" layoutX="1058.0" layoutY="681.0" mnemonicParsing="false" onAction="#doEndTurn" prefHeight="25.0" prefWidth="62.0" text="End turn" />
+      <Button id="redBtn" fx:id="redBtn" layoutX="674.0" layoutY="287.0" mnemonicParsing="false" onAction="#doChangeToRed" prefHeight="60.0" prefWidth="60.0" text="Red" textFill="RED" />
+      <Button id="blueBtn" fx:id="blueBtn" layoutX="760.0" layoutY="287.0" mnemonicParsing="false" onAction="#doChangeToBlue" prefHeight="60.0" prefWidth="60.0" rotate="90.0" text="Blue" textFill="BLUE" />
+      <Button id="greenBtn" fx:id="greenBtn" layoutX="760.0" layoutY="373.0" mnemonicParsing="false" onAction="#doChangeToGreen" prefHeight="60.0" prefWidth="60.0" rotate="180.0" text="Green" textFill="#328c0a" />
+      <Button id="yellowBtn" fx:id="yellowBtn" layoutX="674.0" layoutY="373.0" mnemonicParsing="false" onAction="#doChangeToYellow" prefHeight="60.0" prefWidth="60.0" rotate="-90.0" text="Yellow" textFill="#e6d200" />
+      <Button id="emeraldBtn" fx:id="emeraldBtn" layoutX="674.0" layoutY="287.0" mnemonicParsing="false" onAction="#doChangeToEmerald" prefHeight="60.0" prefWidth="60.0" textFill="RED" />
+      <Button id="amberBtn" fx:id="amberBtn" layoutX="760.0" layoutY="287.0" mnemonicParsing="false" onAction="#doChangeToAmber" prefHeight="60.0" prefWidth="60.0" rotate="90.0" textFill="BLUE" />
+      <Button id="amethystBtn" fx:id="amethystBtn" layoutX="760.0" layoutY="373.0" mnemonicParsing="false" onAction="#doChangeToAmethyst" prefHeight="60.0" prefWidth="60.0" rotate="180.0" textFill="#328c0a" />
+      <Button id="garnetBtn" fx:id="garnetBtn" layoutX="674.0" layoutY="373.0" mnemonicParsing="false" onAction="#doChangeToGarnet" prefHeight="60.0" prefWidth="60.0" rotate="-90.0" textFill="#e6d200" />
+      <Pane id="scorePane" fx:id="scorePane" layoutX="457.0" layoutY="190.0" prefHeight="340.0" prefWidth="580.0" visible="false">
+         <children>
+            <CheckBox fx:id="saveLogCheck" disable="true" layoutX="223.0" layoutY="309.0" mnemonicParsing="false" text="Save match log" />
+            <Button fx:id="continueBtn" layoutX="505.0" layoutY="305.0" mnemonicParsing="false" onAction="#doContinue" prefHeight="25.0" prefWidth="65.0" text="Continue" visible="false" />
+            <Button fx:id="playAgainBtn" layoutX="500.0" layoutY="305.0" mnemonicParsing="false" onAction="#doPlayAgain" prefHeight="25.0" prefWidth="70.0" text="Play again" visible="false" />
+            <Button fx:id="backToMenuBtn" layoutX="10.0" layoutY="305.0" mnemonicParsing="false" onAction="#doBackToMenu" text="Back to menu" visible="false" />
+         </children>
+      </Pane>
+      <Button fx:id="toggleScoreboardBtn" layoutX="1199.0" layoutY="53.0" mnemonicParsing="false" onAction="#doToggleScoreboard" prefHeight="42.0" prefWidth="76.0" text="Hide&#10;scoreboard" textAlignment="CENTER" visible="false" />
+      <Button fx:id="acceptBtn" layoutX="1058.0" layoutY="642.0" mnemonicParsing="false" onAction="#doAccept" prefHeight="25.0" prefWidth="62.0" text="Accept" visible="false" />
+   </children>
+</Pane>

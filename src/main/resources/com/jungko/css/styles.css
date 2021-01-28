@@ -1,0 +1,179 @@
+#mainPane{
+    -fx-background-image: url("../bgs/bg_main.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1280 720;
+    -fx-background-position: center center;
+    /*-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+}
+
+#settingsPane{
+    -fx-background-image: url("../bgs/bg_settings.png");
+    /*-fx-background-repeat: stretch;*/
+    -fx-background-size: 1280 720;
+    -fx-background-position: center center;
+    /*-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+}
+
+.settingElement{
+    -fx-background-color: #F7DA00;
+}
+
+.settingTooltip{
+    -fx-show-delay: 200ms;
+    -fx-show-duration: 20s;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+#gamePane{
+    -fx-background-image: url("../bgs/bg_game.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1280 720;
+    -fx-background-position: center center;
+    /*-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+}
+
+#scorePane{
+    -fx-background-image: url("../bgs/bg_scoreboard.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 580 340;
+    -fx-background-position: center center;
+}
+
+/*.scoreText{*/
+/*    -fx-fill: black;*/
+/*    -fx-stroke: white;*/
+/*    -fx-stroke-width: 2;*/
+/*}*/
+
+#viewCardsPane{
+    -fx-background-image: url("../bgs/bg_game.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1280 720;
+    -fx-background-position: center center;
+    /*-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+}
+
+#redBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: #ff0000;
+    -fx-effect: dropshadow(three-pass-box, #ff0000, 30, 0.0, 10, 10);
+}
+.redTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: #ff0000;
+    -fx-effect: dropshadow(three-pass-box, #ff0000, 10, 0.5, 0, 0);
+    /*-fx-background-insets: 0 0 -1 0, 0;*/
+    /*-fx-padding: 0.25em;*/
+}
+#redBtn:hover, .redTriBtn:hover{
+    /*type, color, spread, opacity, x, y*/
+    -fx-effect: dropshadow(three-pass-box, #ff0000, 20, 0.5, 0, 0);
+}
+
+#blueBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: #0000ff;
+    -fx-effect: dropshadow(three-pass-box, #0000ff, 30, 0.0, 10, 10);
+}
+.blueTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: #0000ff;
+    -fx-effect: dropshadow(three-pass-box, #0000ff, 10, 0.5, 0, 0);
+}
+#blueBtn:hover, .blueTriBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, #0000ff, 20, 0.5, 0, 0);
+}
+
+#greenBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: #328c0a;
+    -fx-effect: dropshadow(three-pass-box, #328c0a, 30, 0.0, 10, 10);
+}
+.greenTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: #328c0a;
+    -fx-effect: dropshadow(three-pass-box, #328c0a, 10, 0.5, 0, 0);
+}
+#greenBtn:hover, .greenTriBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, #328c0a, 20, 0.5, 0, 0);
+}
+
+#yellowBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: #e6d200;
+    -fx-effect: dropshadow(three-pass-box, #e6d200, 30, 0.0, 10, 10);
+}
+.yellowTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: #e6d200;
+    -fx-effect: dropshadow(three-pass-box, #e6d200, 10, 0.5, 0, 0);
+}
+#yellowBtn:hover, .yellowTriBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, #e6d200, 20, 0.5, 0, 0);
+}
+
+
+#garnetBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: linear-gradient(to right, #77182e, #cd1d4b, #cd1d4b, #77182e);
+    -fx-effect: dropshadow(three-pass-box, #77182e, 30, 0.0, 10, 10);
+}
+.garnetTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: linear-gradient(#77182e, #cd1d4b, #cd1d4b, #77182e);
+    -fx-effect: dropshadow(three-pass-box, #77182e, 10, 0.5, 0, 0);
+}
+#garnetBtn:hover, .garnetTriBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, #77182e, 20, 0.5, 0, 0);
+}
+
+#amethystBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: linear-gradient(#1f1023, #581644, #581644, #1f1023);
+    -fx-effect: dropshadow(three-pass-box, #1f1023, 30, 0.0, 10, 10);
+}
+.amethystTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: linear-gradient(#1f1023, #581644, #581644, #1f1023);
+    -fx-effect: dropshadow(three-pass-box, #1f1023, 10, 0.5, 0, 0);
+}
+#amethystBtn:hover, .amethystTriBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, #1f1023, 20, 0.5, 0, 0);
+}
+
+#emeraldBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: linear-gradient(#015543, #009464, #009464, #015543);
+    -fx-effect: dropshadow(three-pass-box, #015543, 30, 0.0, 10, 10);
+}
+.emeraldTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: linear-gradient(#015543, #009464, #009464, #015543);
+    -fx-effect: dropshadow(three-pass-box, #015543, 10, 0.5, 0, 0);
+}
+#emeraldBtn:hover, .emeraldTriBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, #015543, 20, 0.5, 0, 0);
+}
+
+#amberBtn{
+    -fx-shape: "M 150 300 Q 150 150 300 150 Q 300 300 300 300 Q 150 300 150 300";
+    -fx-background-color: linear-gradient(to right, #ad4e2a, #e58932, #e58932, #ad4e2a);
+    -fx-effect: dropshadow(three-pass-box, #ad4e2a, 30, 0.0, 10, 10);
+}
+.amberTriBtn{
+    -fx-shape: "M 100 300 L 100 200 L 200 250 L 100 300 ";
+    -fx-background-color: linear-gradient(#ad4e2a, #e58932, #e58932, #ad4e2a);
+    -fx-effect: dropshadow(three-pass-box, #ad4e2a, 10, 0.5, 0, 0);
+}
+#amberBtn:hover, .amberTriBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, #ad4e2a, 20, 0.5, 0, 0);
+}

@@ -1,4 +1,4 @@
-# Uno with bots
+# UNO with bots
 
 This is a PvE offline UNO game, featuring two different UNO decks and customizable game rules.
 
